@@ -7,6 +7,7 @@
   import {Input} from './components/Input'
   import {Container} from './components/Container'
   import {PersonList} from './components/PersonList'
+  import {User} from './components/state/User'
 
 function App() {
     const nameList = [
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Status status='loading'/>
+{/*       <Status status='loading'/>
       <PersonList names={nameList} />
       <Heading>Place holder text</Heading>
       <Oscar>
@@ -38,7 +39,9 @@ function App() {
         }}
         />
       <Input value='' handleChange={e=>console.log(e)}></Input>  
-      <Container styles={{border:'1px solid black',padding:'lrem'}}></Container>
+      <Container styles={{border:'1px solid black',padding:'lrem'}}></Container> */}
+
+       <User></User>
  
     </div>
   );

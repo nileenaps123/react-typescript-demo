@@ -7,10 +7,10 @@ type PersonListProps={
 export const PersonList=(props:PersonListProps)=>{
     return(
         <div>
-        {props.names.map(name=>{
-            return(<>{console.log(name)}</>
+        {props.names.map(nameList=>{
+            return(
                 
-                //<h1>{name.fname} {name.lname}</h1>
+                <h1>{nameList.name.fname} {nameList.name.lname}</h1>
             )
         }
         )
