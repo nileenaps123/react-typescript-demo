@@ -1,11 +1,18 @@
 import './App.css';
-import {List} from  './components/generics/List'  
+import {Text} from  './components/polymorphic/Text'  
 function App() {
     
   return (
     <div className="App">
-      <List items={['Batman','wonderwoman','super man']}
-      onClick={(item)=>console.log(item)}></List>
+        <Text as='h1'  size='lg'>
+          Heading
+        </Text>
+        <Text as ='p' size='md'>
+          Paragraph
+        </Text>
+        <Text as='label' htmlFor='id' size='sm' color='secondary'>
+          Label
+        </Text>
     </div>
   );
 }
